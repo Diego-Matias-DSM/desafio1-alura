@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main class="conteudo">
+            <img src="img/logo.png" class="logo" onclick="home()">
+            <section class="div-principal">
+                <form action="">       
+                  <textarea class="text-input" type="text" name="input-texto" maxlength="120" id="input-texto" placeholder="Digite seu texto aqui"></textarea>
+                  <div class="form-group">
+                    <img src="img/!.png" class="img-alerta">
+                    <label for="input-texto">Digite apenas letras minúsculas e sem acento.</label>
+                  </div>
+                  <div class="botoes-div">
+                    <input class="botao-criptografar" type="submit" value="Criptografar" id="botao-criptografar" >
+                    <input class="botao-descriptografar" type="submit" value="Descriptografar" id="botao-descriptografar">
+                  </div>
+                </form>
+              </section> 
+              
+              <section class="message-box">
+                <div id="div-desaparece" class="message-box-div">
+                  <img src="img/mensaje.svg"> 
+                  <h2>Nenhuma mensagem encontrada</h2>
+                  <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+                </div>      
+                <div id="div-aparece">
+                  <textarea class="div-mensagem" type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
+                  <input class="botao-copiar" type="submit" value="Copiar" id="botao-copiar">
+                </div>
+              </section>
+    </main>
+
+    <footer class="rodape">
+        <img src="img/github.png" class="github">
+        <img src="img/linkedin.png" class="linkedin">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
